@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Tut</title>
+    <meta name="description" content="tutorials blah blah">
+</head>
+
+<body>
+    <header>
+        <h1>HTML FOR US BY US</h1>
+        <nav>
+            <ul>
+                <li><a href="#boba">Boba</a></li>
+                <li><a href="#coffee">Coffee</a></li>
+                <li><a href="#tea">Tea</a></li>
+                <li><a href="#cat_survey">Cat?</a></li>
+            </ul>
+        </nav>
+        <div>
+            <img src="images/boba_cat.jpg" height="300" alt="A Cat Looking Smug at the Camera">
+        </div>
+    </header>
+    <main>
+        <section id="boba">
+            <h2>bubble tea</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae atque illum, aspernatur, qui
+                minima vero explicabo quasi nam enim, facilis maiores nostrum aut laboriosam doloribus suscipit vitae.
+                Repellendus, dolorem.</p>
+        </section>
+        <section id="coffee">
+            <h2>to stay awake</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae atque illum, aspernatur, qui
+                minima vero explicabo quasi nam enim, facilis maiores nostrum aut laboriosam doloribus suscipit vitae.
+                Repellendus, dolorem.</p>
+        </section>
+        <section id="tea">
+            <h2>relaxing herbal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae atque illum, aspernatur, qui
+                minima vero explicabo quasi nam enim, facilis maiores nostrum aut laboriosam doloribus suscipit vitae.
+                Repellendus, dolorem.</p>
+        </section>
+        <section id="cat_survey">
+            <h2>what do you think of my cat?</h2>
+            <div>
+                <img src="images/boba_cat.jpg" height="300" alt="A Cat Looking Smug at the Camera">
+            </div>
+            <label for="cat">Don't worry, she can't hear this:</label>
+            <select name="survey" id="cat">
+                <option value="">but I am.</option>
+                <option>why is she so smug?</option>
+                <option>oh yeah, that's a cat</option>
+                <option>what is her skincare like?</option>
+                <option>thoughts? and prayers.</option>
+            </select>
+        </section>
+        <section>
+            <fieldset>
+                <legend>All these choices, but only one is correct:</legend>
+
+                <div>
+                    <input type="radio" id="one" name="correct" value="this" checked />
+                    <label for="one">Maybe it's this one?</label>
+                </div>
+                <div>
+                    <input type="radio" id="two" name="correct" value="that" />
+                    <label for="two">But it might be that one, too...</label>
+                </div>
+                <div>
+                    <input type="radio" id="three" name="correct" value="not" />
+                    <label for="three">Definitely not this one.</label>
+                </div>
+            </fieldset>
+        </section>
+        <section>
+            <details>
+                <summary>open for a smol cat</summary>
+                <figure role="img" aria-labelledby="cat-caption">
+                <pre>
+                    ╱|、
+                    (˚ˎ 。7  
+                     |、˜〵          
+                    じしˍ,)ノ
+                </pre>
+                <figcaption id="cat-caption">A small cat in asciiart.</figcaption>
+                </figure>
+            </details>
+        </section>
+
+    </main>
+</body>
+
+</html>
