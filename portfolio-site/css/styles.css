@@ -1,0 +1,136 @@
+/* 
+COLOR PALETTE
+
+maroon #89023e
+blush #CC7178
+peach #FFD9DA
+tan #F3E1DD
+matcha #C7D9B7 
+*/
+
+/* GLOBAL STYLES
+--------------------------------- */
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #F3E1DD;
+    margin: 0px;
+}
+
+/* links */
+a {
+    color: #89023e;
+}
+
+a:hover {
+    color: #FFD9DA;
+    text-decoration: none;
+}
+
+p a {
+    color: #89023e;
+}
+
+.btn {
+    background: #89023e;
+    color: #FFD9DA;
+    text-decoration: none;
+}
+
+.content-wrapper {
+    margin: 0px auto;
+    padding: 30px;
+    max-width: 900px;
+}
+
+/* HOME
+--------------------------------- */
+.home {
+    background: url(../images/bg-sunset-ocean.jpg) no-repeat;
+    background-size: cover;
+}
+
+.home .content-wrapper {
+    background: #FFD9DAB3;
+}
+
+/* RESUME
+--------------------------------- */
+.resume header::before {
+    background: url(../images/bg-sunset-ocean.jpg) center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 400px;
+}
+
+.resume-section {
+    margin-bottom: 50px;
+}
+
+.resume-section h2 {
+    border-bottom: 2px dashed #CC7178;
+}
+
+/* Profile
+--------------------------------- */
+
+/* Projects
+--------------------------------- */
+.project-item {
+    display: flow-root;
+    margin: 30px 0;
+}
+
+.project-item img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+
+/* Work Experience
+--------------------------------- */
+
+/* Education
+--------------------------------- */
+
+/* FOOTER
+--------------------------------- */
+footer {
+    background: #89023e;
+    color: #F3E1DD;
+
+    a {
+        color: #C7D9B7;
+
+    }
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        display: inline;
+    }
+
+    img {
+        width: 32px;
+    }
+}
