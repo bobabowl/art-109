@@ -64,10 +64,17 @@ p a {
 .home {
     background: url(../images/bg-sunset-ocean.jpg) no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .home .content-wrapper {
+    flex: 1 0 auto;
+}
+
+.content-bg {
     background: #FFD9DAB3;
+    padding: 30px;
 }
 
 /* RESUME
@@ -88,6 +95,12 @@ p a {
     border-bottom: 2px dashed #CC7178;
 }
 
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+
 /* Profile
 --------------------------------- */
 
@@ -106,6 +119,11 @@ p a {
 
 /* Work Experience
 --------------------------------- */
+.work-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+}
 
 /* Education
 --------------------------------- */
@@ -115,6 +133,9 @@ p a {
 footer {
     background: #89023e;
     color: #F3E1DD;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
 
     a {
         color: #C7D9B7;
@@ -128,9 +149,14 @@ footer {
 
     li {
         display: inline;
+        margin-left: 10px;
     }
 
     img {
         width: 32px;
+    }
+
+    img:hover {
+        opacity: 0.5;
     }
 }
