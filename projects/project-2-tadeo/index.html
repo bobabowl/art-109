@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mom, Dad, I'm...</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="dropdown1" onchange="handleDropdownChange(1)">
+            <select>
+                <option value="">Mom, Dad, I'm...</option>
+                <option value="opt1">...gay.</option>
+                <option value="opt2">hungry!</option>
+            </select>
+        </div>
+        <div id="dropdown2-container" class="hidden">
+            <select id="dropdown2" onchange="handleDropdownChange(2)">
+                <option value="">Mom, Dad, I'm...</option>
+                <option value="opt11">...gay.</option>
+                <option value="opt22">hungry!</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

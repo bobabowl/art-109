@@ -15,6 +15,8 @@ matcha #C7D9B7
 */
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
+    /* setting default to 10px */
 }
 
 *,
@@ -31,6 +33,31 @@ body {
 body {
     background: #F3E1DD;
     margin: 0px;
+    font-family: "Reddit Sans", serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Delicious Handrawn", serif;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: .1rem;
+}
+
+h1 {
+    font-size: 7rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 2.4rem;
 }
 
 /* links */
@@ -39,7 +66,7 @@ a {
 }
 
 a:hover {
-    color: #FFD9DA;
+    color: #CC7178;
     text-decoration: none;
 }
 
@@ -51,6 +78,13 @@ p a {
     background: #89023e;
     color: #FFD9DA;
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    letter-spacing: .1em;
+    line-height: 1;
+    border-radius: 5px;
 }
 
 .content-wrapper {
@@ -77,6 +111,16 @@ p a {
     padding: 30px;
 }
 
+@media screen and (max-width:650px) {
+    .home .content-wrapper {
+        padding: 10px;
+    }
+
+    .content-bg {
+        padding: 20px;
+    }
+}
+
 /* RESUME
 --------------------------------- */
 .resume header::before {
@@ -99,43 +143,108 @@ p a {
     position: fixed;
     top: 5px;
     left: 5px;
+    font-size: 1.5rem;
 }
 
-/* Profile
---------------------------------- */
+@media screen and (max-width:1200px) {
+    .download-link {
+        position: absolute;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .resume header::before {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+    }
+}
+
 
 /* Projects
 --------------------------------- */
 .project-item {
-    display: flow-root;
     margin: 30px 0;
 }
 
 .project-item img {
     width: 300px;
-    float: left;
-    margin-right: 20px;
+}
+
+@media screen and (min-width:860px) {
+    .project-item {
+        display: flow-root;
+    }
+
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width:650px) and (max-width:859px) {
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .project-item img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 /* Work Experience
 --------------------------------- */
 .work-item {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    column-gap: 20px;
+    margin: 30px 0;
+}
+
+.work-details p {
+    margin: 0;
+}
+
+@media screen and (min-width:860px) {
+    .work-item {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+    }
+
+    .work-summary p:first-child {
+        margin-top: 0;
+    }
 }
 
 /* Education
 --------------------------------- */
+
+.education-item {
+    margin: 30px 0;
+
+    p {
+        margin: 0;
+    }
+}
 
 /* FOOTER
 --------------------------------- */
 footer {
     background: #89023e;
     color: #F3E1DD;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
 
     a {
         color: #C7D9B7;
@@ -158,5 +267,21 @@ footer {
 
     img:hover {
         opacity: 0.5;
+    }
+}
+
+@media screen and (min-width:860px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+
+    }
+}
+
+@media screen and (max-width:859px) {
+    footer {
+        text-align: center;
+        padding: 10px;
     }
 }
