@@ -1,13 +1,89 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+
+body {
+    font-size: 1.6rem;
+    /* font-size 1.6rem is now the same as 16px */
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+
+}
+
+.background {
+    background-color: black;
+}
+
+.background-alt {
+    background-color: white;
+    transition: background 1s;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+select,
+input[type="text"] {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-family: "Grape Nuts", serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: opacity 0.5s ease;
+    background-color: black;
+    color: white;
+}
+
+.img-bulb {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+}
+
 .hidden {
     opacity: 0;
     visibility: hidden;
-    /* transition: visibility 0s 0.5s, opacity 0.5s ease; */
+    transition: visibility 0s 0.5s, opacity 0.5s ease;
     /* Smooth fade-in */
 }
 
 .visible {
     opacity: 1;
     visibility: visible;
-    /* transition: opacity 0.5s ease; */
+    transition: opacity 0.5s ease;
+    /* Smooth fade-in */
+}
+
+.used {
+    opacity: .5;
+    visibility: visible;
+    transition: opacity 0.5s ease;
     /* Smooth fade-in */
 }

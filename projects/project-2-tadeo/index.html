@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mom, Dad, I'm...</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="bg" class="background">
+    <div class="img-bulb">
+        <img src="assets/lightbulb.gif" alt="a lineart drawing of a lightbulb" srcset="">
+    </div>
+    <!-- <div class="img-flower">
+        <img src="" alt="">
+    </div> -->
     <div class="container">
-        <div id="dropdown1" onchange="handleDropdownChange(1)">
+        <div id="dropdown1-container" onchange="handleDropdownChange(1)">
             <select>
                 <option value="">Mom, Dad, I'm...</option>
                 <option value="opt1">...gay.</option>
@@ -18,10 +27,131 @@
             </select>
         </div>
         <div id="dropdown2-container" class="hidden">
-            <select id="dropdown2" onchange="handleDropdownChange(2)">
-                <option value="">Mom, Dad, I'm...</option>
-                <option value="opt11">...gay.</option>
-                <option value="opt22">hungry!</option>
+            <select id="" onchange="handleDropdownChange(2)">
+                <option value="">I think I like...</option>
+                <option value="opt1">boys?</option>
+                <option value="opt2">girls?</option>
+                <option value="opt3">girls.</option>
+                <option value="opt4">please let it be girls.</option>
+            </select>
+        </div>
+        <div id="dropdown3-container" class="hidden">
+            <select id="" onchange="handleDropdownChange(3)">
+                <option value="">God, what will my parents think?</option>
+                <option value="opt1">don't tell them.</option>
+                <option value="opt2">this is a part of me.</option>
+                <option value="opt3">but they might look at me different.</option>
+                <option value="opt4">or they might not.</option>
+            </select>
+        </div>
+        <div id="dropdown4-container" class="hidden">
+            <select id="" onchange="handleDropdownChange(4)">
+                <option value="">No, no, don't think like that- I'm fine. I'm</option>
+                <option value="opt1">fine.</option>
+                <option value="opt2">not fine.</option>
+                <option value="opt3">... what's wrong with me?</option>
+                <option value="opt4">stop it.</option>
+            </select>
+        </div>
+        <div id="dropdown5-container" class="hidden">
+            <select id="" onchange="handleDropdownChange(5)">
+                <option value="">If it goes good,</option>
+                <option value="opt1">that would be amazing.</option>
+                <option value="opt2">they wouldn't care who I liked.</option>
+                <option value="opt3">I'd go to pride with them.</option>
+                <option value="opt4">as their gay son.</option>
+            </select>
+        </div>
+        <div id="dropdown6-container" class="hidden">
+            <select id="" onchange="handleDropdownChange(6)">
+                <option value="">But what if</option>
+                <option value="opt1">they disown me and I get kicked out of the house?</option>
+                <option value="opt2">they say they're okay but are just hiding their true feelings about me?</option>
+                <option value="opt3">they're uncomfortable?</option>
+                <option value="opt4">they don't love me?</option>
+            </select>
+        </div>
+        <div id="dropdown7-container" class="hidden">
+            <select id="" onchange="handleDropdownChange(7)">
+                <option value="">My family</option>
+                <option value="opt1">is my found family.</option>
+                <option value="opt2">means everything to me.</option>
+                <option value="opt3">doesn't exist.</option>
+            </select>
+        </div>
+        <div id="dropdown8-container" class="hidden">
+            <select id="" onchange="handleDropdownChange(8)">
+                <option value="">I had a crush on a boy once. If I told my family,</option>
+                <option value="opt1">what would they think?</option>
+                <option value="opt2">"Why can't you be normal?"</option>
+                <option value="opt3">"I want you to be a boy."</option>
+                <option value="opt4">"How cute! Can we meet him?"</option>
+            </select>
+        </div>
+        <!-- <div id="dropdown9-container" class="hidden">
+            <select id="" onchange="handleDropdownChange(9)">
+                <option value="">My brother and sister caught me making two boys kiss in a game, and</option>
+                <option value="opt1">they teased me.</option>
+                <option value="opt2">they looked disgusted.</option>
+                <option value="opt3">the thought of them telling my parents scares me.</option>
+            </select>
+        </div> -->
+        <div id="dropdown9-container" class="hidden">
+            <select id="" onchange="handleDropdownChange(9)">
+                <option value="">If I kept this secret for the rest of my life, would I be happy?</option>
+                <option value="opt1">yes.</option>
+                <option value="opt2">no.</option>
+                <option value="opt3">of course not.</option>
+                <option value="opt4">this is a part of me.</option>
+            </select>
+        </div>
+        <div id="dropdown10-container" class="hidden">
+            <select id="" onchange="handleDropdownChange(10)">
+                <option value="">Being gay</option>
+                <option value="opt1">scares me.</option>
+                <option value="opt2">terrifies me.</option>
+                <option value="opt3">is just part of life.</option>
+                <option value="opt4">was the best thing that happened to me.</option>
+                <option value="opt5">feels the same.</option>
+            </select>
+        </div>
+        <div id="dropdown11-container" class="hidden">
+            <select id="" onchange="handleDropdownChange(11)">
+                <option value="">I just</option>
+                <option value="opt1">want to feel okay.</option>
+                <option value="opt2">want to be myself.</option>
+                <option value="opt3">want to tell them.</option>
+                <option value="opt4">want them to understand.</option>
+            </select>
+        </div>
+        <div id="dropdown12-container" class="hidden">
+            <select id="" onchange="handleDropdownChange(12)">
+                <option value="">I wish</option>
+                <option value="opt1">I didn't need to come out.</option>
+                <option value="opt2">I liked girls.</option>
+                <option value="opt3">it was easy.</option>
+                <option value="opt4">I didn't feel this way.</option>
+            </select>
+        </div>
+        <div id="dropdown13-container" class="hidden">
+            <select id="" onchange="handleDropdownChange(13)">
+                <option value="">Please</option>
+                <option value="opt1">...tell me I'm still your son.</option>
+                <option value="opt2">...</option>
+                <option value="opt3">...</option>
+            </select>
+        </div>
+        <div id="dropdown14-container" class="hidden">
+            <select id="" onchange="handleDropdownChange(14)">
+                <option value="">Please...</option>
+                <option value="opt1">...accept me.</option>
+                <option value="opt2">...love me.</option>
+            </select>
+        </div>
+        <div id="dropdown15-container" class="hidden">
+            <select id="" onchange="finalPrompt()">
+                <option value="">...</option>
+                <option value="opt1">... I just want to be loved...</option>
             </select>
         </div>
     </div>
