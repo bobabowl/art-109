@@ -31,7 +31,11 @@ body {
 }
 
 body {
-    background: #F3E1DD;
+    /* background: #F3E1DD; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(#F3E1DD 40%, #CC7178);
+    height: 100%;
     margin: 0px;
     font-family: "Reddit Sans", serif;
     font-size: 1.5rem;
@@ -270,6 +274,12 @@ p a {
 
 .project-item img {
     width: 450px;
+
+}
+
+.project-item p {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 @media screen and (min-width:860px) {
