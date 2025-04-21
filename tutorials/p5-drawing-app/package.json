@@ -1,0 +1,16 @@
+{
+  "name": "p5-drawing-app",
+  "version": "1.0.0",
+  "description": "p5 node drawing following tutorial",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Angelo Tadeo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  }
+}
