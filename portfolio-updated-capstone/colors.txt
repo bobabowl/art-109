@@ -1,0 +1,5 @@
+maroon #89023e
+blush #CC7178
+peach #FFD9DA
+tan #F3E1DD
+matcha #C7D9B7
